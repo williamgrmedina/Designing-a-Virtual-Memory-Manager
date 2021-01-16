@@ -1,2 +1,4 @@
 # VirtualMemoryManager
-A simple virtual memory manager using Java
+This is an exercise from the book Operating System Concepts - 9th edition. If you happen to have the ninth edition of the book, the exercise can be found at page 458. Other versions may be different, but I have included a snippet of the exercise description in the project for those who may wish to implement the exercise for themselves.
+
+The backing store is a virtual simulation of how memory is fetched in an operating system. The file is opened and read from when the program encounters a page fault, just like what would happen when an actual program encounters code that it doesn't have a pointer to. In addition to a page table that holds a map from virtual page numbers to literal memory frames, there is also a TLB, or miniature, optimized page table for getting the most recently used frames. This implementation also includes the described modification at the end of the exercise, using FIFO as a technique for page and physical memory replacement.
